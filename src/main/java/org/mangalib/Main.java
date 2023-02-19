@@ -22,6 +22,7 @@ public class Main {
         JSONArray arr = object.getJSONObject("items").getJSONArray("data");
         for (int i = 0; i < arr.length(); i++) {
             arr.getJSONObject(i);
+            System.out.println("___________________");
             System.out.println("ID : "+arr.getJSONObject(i).getInt("id"));
             System.out.println("Японское название : "+arr.getJSONObject(i).getString("name"));
             System.out.println("Английское название : "+arr.getJSONObject(i).getString("eng_name"));
